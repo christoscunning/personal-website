@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$("#body").load("page1.html");
+	$("#body").load("page1-v2.html");
 	$("#page1text").css("color","#a3c6cf");
 	$("#page1").click(function() {
 		$("#page1text").css("color","#a3c6cf");
