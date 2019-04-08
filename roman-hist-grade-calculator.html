@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Christos is the best at tiny tower</title>
+	<style>
+	.inline {
+		display: inline-block;
+	}
+	
+	.chart {
+		height: 250px;
+		width: 400px;
+	}
+	
+	</style>
+	<script type='text/javascript'src="./js/jquery-3.3.1.min.js"></script>
+	<script type='text/javascript'src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+	<script type='text/javascript'src="./js/roman-hist.js"></script>
+	<script type='text/javascript'src="./js/roman-hist-chart.js"></script>
+	
+</head>
+<body>
+	
+	<h3>try different cobinations of grading schemes</h3>
+	
+	<div class="inline">
+		<p>use second test mark?</p>
+	</div>
+	
+	<div class="inline">
+	<label class="switch">
+		<input id="test-option-checkbox" type="checkbox">
+		<span class="slider"></span>
+	</label>
+	</div>
+	
+	<p>First Test: 93%</p>
+		Second Test: <input type="number" id="grade2"><br>
+		Final Test: <input type="number" id="grade3"><br>
+	<button type="button" id="submit-button">Calculate grade</button>
+	<div class="inline">
+		<p>Final Grade:</p>
+	</div>
+	<div class="inline">
+		<p id="final-grade">--</p>
+	</div>
+	<div class="inline">
+		<p>%</p>
+	</div>
+	
+	<br>
+	
+	<h3>With second test dropped</h3>
+	<p>Chance to get a A grade with min final mark 70:</p>
+	<p id="num-a-grades-1">5 / 7 = 72% chance</p>
+	
+	<div >
+		<div class="chart">
+			<canvas class="chart" id="chart1"></canvas>
+		</div>
+	</div>
+	
+	<h3>With second test included</h3>
+	<p>The chance to get an A grade if the minimum mark on the second test is 75 and the min mark recieved on final is 70:</p>
+	<p id="num-a-grades">--</p>
+	
+	<div id="section-of-graphs"> 
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 75%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart3"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 80%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart4"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 85%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart5"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		<!-- add line break to make it not too wide-->
+		<br>
+		<div style="float:left;width:100%;height:1px;border: 1px solid black;">
+		
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 90%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart6"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 95%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart7"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		
+		<div style="float:left;margin-right:10px;">
+			<p>Graph of second test: 100%</p>
+			<div class="chart">
+				<canvas class="chart"id="chart8"></canvas>
+				<p style="text-align:center;">Grade on Final</p>
+			</div>
+		</div>
+		
+		
+		<!-- add line break to make it not too wide-->
+		<br>
+		<div style="float:left;width:100%;height:1px;border: 1px solid black;">
+		
+		
+		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,156 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 8em;
+	min-height: 100%;
+}
+
+.center-text {
+			text-align: center;
+}
+		
+.center-div {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+/* content body stuff */
+#body {
+	padding-top:5em;
+	padding-bottom: 5em;
+	
+	position: relative;
+	display: block;
+}
+
+#body::after {
+	content: "";
+	background: url(/images/curcuitsbackground.jpg);
+	background-repeat: repeat;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+/*Jumbotron stuff*/
+.jumbotron {
+	/* background-image: url("/images/jumbotron-home.jpg"); */
+	background-image: url(/images/jumbotron-home.jpg);
+	background-repeat: no-repeat;
+	background-position: 75%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height:300px;
+	margin:0px !important;
+}
+
+.jumbotron-text {
+	color: white !important;
+	text-align: center;
+	margin:0;
+}
+
+.jumbotron .container {
+	position: relative;
+}
+
+#jumbo-title-backdrop {
+	background-color: rgba(89,89,89,0.8);
+	border-radius: 1em;
+	padding: 1em;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+/*test \/*/
+#body > .container {
+	text-align: center;
+	padding-top:1em;
+}
+
+/* footer stuff */
+#footer {
+	height: 8em;
+	background-color: #666666;
+	position: absolute;
+	bottom:0;
+	display: table;
+	width: 100%;
+	
+}
+
+#footer div {
+	height: 8em;
+}
+
+#footer > .row {
+	height: 100%;
+	display: table-row;
+}
+
+#footer > .row > div {
+	display: table-cell;
+	float: none;
+}
+
+.footertext {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 100%;
+	text-align: center;
+}
+
+.footercirclelink {
+	/*should make it a perfect circle*/
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	transform: translate(0, -50%);
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+/* Navbar stuff */
+#cnavbar {
+	background-color: #666666;
+}
+
+#cnavbar > div {
+	/*pointless putting background color here too*/
+	cursor: pointer;
+}
+
+#nactive {
+	color: #a3c6cf;
+}
+
+#cnavbar > div > h4 {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
