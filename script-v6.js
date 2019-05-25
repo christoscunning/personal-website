@@ -28,7 +28,7 @@ $(document).ready(function() {
 		$("#page2text").css("color","white");
 		$("#page3text").css("color","white");
 		$("#page4text").css("color","#a3c6cf");
-		$("#body").load("page4-v2.html");
+		$("#body").load("page4-v5.html");
 	});
 });
 
