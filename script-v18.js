@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$("#page2text").css("color","#a3c6cf");
 		$("#page3text").css("color","white");
 		$("#page4text").css("color","white");
-		$("#body").load("page2-v11.htm");
+		$("#body").load("page2-v12.html");
 	});
 	$("#page3").click(function() {
 		$("#page1text").css("color","white");
