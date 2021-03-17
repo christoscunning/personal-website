@@ -11,13 +11,13 @@ Website is a single HTML page that switches the main content using Javascript an
 repo: personal-website
 
 
-#Steps to Update resume:
+# Steps to Update resume:
 1. Open resume in Word.
 2. Save as filtered web page (.htm)
 3. Open in Notepad++
 4. Convert Text encoding to UTF-8
 5. Update text encoding header
-6. Add Before and after bootstrap containter
+6. Add Before and after bootstrap container
 7. Add custom style
 8. Update link in script-vXX.js
 
